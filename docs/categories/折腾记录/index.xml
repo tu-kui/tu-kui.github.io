@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>Posts on 菟葵</title>
-        <link>https://tu-kui.github.io/post/</link>
-        <description>Recent content in Posts on 菟葵</description>
+        <title>折腾记录 on 菟葵</title>
+        <link>https://tu-kui.github.io/categories/%E6%8A%98%E8%85%BE%E8%AE%B0%E5%BD%95/</link>
+        <description>Recent content in 折腾记录 on 菟葵</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
-        <lastBuildDate>Sun, 25 Sep 2022 12:00:11 +0800</lastBuildDate><atom:link href="https://tu-kui.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sun, 25 Sep 2022 12:00:11 +0800</lastBuildDate><atom:link href="https://tu-kui.github.io/categories/%E6%8A%98%E8%85%BE%E8%AE%B0%E5%BD%95/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>静态博客搭建备忘</title>
         <link>https://tu-kui.github.io/p/%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%A4%87%E5%BF%98/</link>
         <pubDate>Sun, 25 Sep 2022 12:00:11 +0800</pubDate>
