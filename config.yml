@@ -168,6 +168,21 @@ params:
         page:
             - type: toc
 
+    #开放图谱 用于内容分享后展现
+    opengraph:
+        twitter:
+            # Your Twitter username
+            site:
+
+            # Available values: summary, summary_large_image
+            card: summary_large_image
+
+    defaultImage:
+        opengraph:
+            enabled: false
+            local: false
+            src:
+
     # 配色方案
     colorScheme:
         # 显示切换选项
