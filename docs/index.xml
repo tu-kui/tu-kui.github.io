@@ -12,7 +12,10 @@
         <pubDate>Sun, 25 Sep 2022 12:00:11 +0800</pubDate>
         
         <guid>https://tu-kui.github.io/p/%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%A4%87%E5%BF%98/</guid>
-        <description>&lt;h2 id=&#34;选择和安装主题以及自定义&#34;&gt;选择和安装主题以及自定义&lt;/h2&gt;
+        <description>&lt;h2 id=&#34;为什么选择hugo&#34;&gt;为什么选择Hugo&lt;/h2&gt;
+&lt;p&gt;选择Hugo主要是听说生成速度非常快。&lt;/p&gt;
+&lt;p&gt;也有一部分是因为它只需要二进制文件就可以生成，不需要安装额外的东西。&lt;/p&gt;
+&lt;h2 id=&#34;选择和安装主题以及自定义&#34;&gt;选择和安装主题以及自定义&lt;/h2&gt;
 &lt;h3 id=&#34;选择主题选择的不仅仅是外观&#34;&gt;选择主题选择的不仅仅是外观&lt;/h3&gt;
 &lt;p&gt;在开始使用主题之前，我还没意识到选择主题不仅仅是选择喜欢的外观。&lt;/p&gt;
 &lt;p&gt;不同的主题自带的文档详细程度，有没有中文文档影响了主题的使用难度。&lt;/p&gt;
@@ -413,7 +416,7 @@
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-yml&#34; data-lang=&#34;yml&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;# 构建静态的目录改为docs&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;c&#34;&gt;# 这样可以把hogo生成的站点一起推送到同一个github储存库&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;c&#34;&gt;# 这样可以把hugo生成的站点一起推送到同一个github储存库&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;c&#34;&gt;# 设置GitHub Pages使用docs即可&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;publishDir&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;docs&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
