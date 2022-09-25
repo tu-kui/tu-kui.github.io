@@ -9,7 +9,7 @@
 <meta property='og:description' content='搭建这个博客踩了不少坑'>
 <meta property='og:url' content='https://tu-kui.github.io/p/%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%A4%87%E5%BF%98/'>
 <meta property='og:site_name' content='菟葵'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='博客' /><meta property='article:published_time' content='2022-09-25T12:00:11&#43;08:00'/><meta property='article:modified_time' content='2022-09-25T15:37:21&#43;08:00'/>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='备忘' /><meta property='article:published_time' content='2022-09-25T12:00:11&#43;08:00'/><meta property='article:modified_time' content='2022-09-25T16:50:21&#43;08:00'/>
 <meta name="twitter:title" content="静态博客搭建备忘">
 <meta name="twitter:description" content="搭建这个博客踩了不少坑"><style>
     :root {
@@ -231,8 +231,8 @@
     
     <header class="article-category">
         
-            <a href="/categories/%E6%8A%98%E8%85%BE%E8%AE%B0%E5%BD%95/" >
-                折腾记录
+            <a href="/categories/%E6%8A%98%E8%85%BE/" >
+                折腾
             </a>
         
     </header>
@@ -311,16 +311,26 @@
 <p>也方便以后更新主题什么的。</p>
 <h3 id="补上stack主题缺失的汉化">补上Stack主题缺失的汉化</h3>
 <h4 id="其一">其一</h4>
-<p>Stack主题的i18n\zh-cn.yaml里有一句是英文。</p>
+<p>Stack主题底部的 Built with Hugo 和点进分类后看见的 PAGE 。</p>
 <p>在站点根目录新建i18n\zh-cn.yaml。里面写入下面这段就可以汉化了。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">footer</span><span class="p">:</span><span class="w">
+<pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">list</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">page</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">one</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;{{ .Count }} 页&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">other</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;{{ .Count }} 页&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">footer</span><span class="p">:</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">builtWith</span><span class="p">:</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">other</span><span class="p">:</span><span class="w"> </span><span class="l">使用 {{ .Generator }} 搭建</span><span class="w">
 </span></span></span></code></pre></td></tr></table>
@@ -337,6 +347,20 @@
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">---
 </span></span><span class="line"><span class="cl">title: 分类
+</span></span><span class="line"><span class="cl">---
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>同理，点击标签进去看见的 tags 也可以这么做。</p>
+<p>在站点根目录新建content\tags\_index.md。里面写入下面这段就可以汉化了。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">---
+</span></span><span class="line"><span class="cl">title: 标签
 </span></span><span class="line"><span class="cl">---
 </span></span></code></pre></td></tr></table>
 </div>
@@ -622,6 +646,40 @@
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span></code></pre></td></tr></table>
 </div>
+</div><h4 id="让文章右边目录不显示莫名奇妙的序号">让文章右边目录不显示莫名奇妙的序号</h4>
+<p>在站点根目录config.yml中参考下面这段里的注释设置。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-yml" data-lang="yml"><span class="line"><span class="cl"><span class="nt">markup</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">goldmark</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">renderer</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="c">## Set to true if you have HTML content inside Markdown</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="nt">unsafe</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="c"># 设置文章右边目录</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">tableOfContents</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="c"># 目录标题结束级别</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">endLevel</span><span class="p">:</span><span class="w"> </span><span class="m">4</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="c"># 目录标题前是否使用序号</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">ordered</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="c"># 目录标题开始级别 2就已经和文章标题一样大了</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">startLevel</span><span class="p">:</span><span class="w"> </span><span class="m">2</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
 </div><h2 id="部署静态博客">部署静态博客</h2>
 <h3 id="把站点和构建的静态博客推送到同一个github储存库">把站点和构建的静态博客推送到同一个github储存库</h3>
 <p>我为了避免自定义的内容因为一些以外情况从本地消失，我决定把站点也一起推送到github储存库。</p>
@@ -650,14 +708,11 @@
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>这个文件夹是Hugo本地查看静态网站效果生成的缓存文件夹，没必要推送到github储存库。</p>
-<h2 id="关于git和github-desktop">关于Git和GitHub Desktop</h2>
+<h2 id="关于git和githubdesktop">关于Git和GitHubDesktop</h2>
 <p>我把这两个都装了。</p>
 <p>我认为某些使用命令简单，某些使用图形化界面简单。</p>
 <h2 id="一些有待解决的问题">一些有待解决的问题</h2>
-<ol>
-<li>点进分类后看见的 PAGE 在哪可以汉化？</li>
-<li>怎么把文章标题改的更大？目前和##的标题一样大，有点不协调。</li>
-</ol>
+<p>怎么把文章标题改的更大？目前和##的标题一样大，有点不协调。</p>
 
 </section>
 
@@ -666,7 +721,7 @@
     
     <section class="article-tags">
         
-            <a href="/tags/%E5%8D%9A%E5%AE%A2/">博客</a>
+            <a href="/tags/%E5%A4%87%E5%BF%98/">备忘</a>
         
     </section>
 
@@ -693,7 +748,7 @@
 
 
         <span>
-            最后更新于 2022-09-25 15:37
+            最后更新于 2022-09-25 16:50
         </span>
     </section></footer>
 
@@ -839,6 +894,7 @@
           <ul>
             <li><a href="#全局使用自定义字体">全局使用自定义字体</a></li>
             <li><a href="#把头像区域居中">把头像区域居中</a></li>
+            <li><a href="#让文章右边目录不显示莫名奇妙的序号">让文章右边目录不显示莫名奇妙的序号</a></li>
           </ul>
         </li>
       </ul>
@@ -848,7 +904,7 @@
         <li><a href="#把站点和构建的静态博客推送到同一个github储存库">把站点和构建的静态博客推送到同一个github储存库</a></li>
       </ul>
     </li>
-    <li><a href="#关于git和github-desktop">关于Git和GitHub Desktop</a></li>
+    <li><a href="#关于git和githubdesktop">关于Git和GitHubDesktop</a></li>
     <li><a href="#一些有待解决的问题">一些有待解决的问题</a></li>
   </ul>
 </nav>

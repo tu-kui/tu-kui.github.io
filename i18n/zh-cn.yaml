@@ -1,3 +1,8 @@
+list:
+    page:
+        one: "{{ .Count }} 页"
+        other: "{{ .Count }} 页"
+
 footer:
     builtWith:
         other: 使用 {{ .Generator }} 搭建

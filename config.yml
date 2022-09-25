@@ -217,11 +217,11 @@ markup:
             unsafe: false
     # 设置文章右边目录
     tableOfContents:
-        # 标题结束级别
+        # 目录标题结束级别
         endLevel: 4
-        # 标题前是否使用序号
+        # 目录标题前是否使用序号
         ordered: false
-        # 标题开始级别 2就已经和文章标题一样大了
+        # 目录标题开始级别 2就已经和文章标题一样大了
         startLevel: 2
     # 代码高亮 可能需要手动指定语言
     highlight:

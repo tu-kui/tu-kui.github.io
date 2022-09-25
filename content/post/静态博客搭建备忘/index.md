@@ -16,11 +16,11 @@ comments: false
 # 草稿
 draft: false
 # 分类
-categories: ["折腾记录"]
+categories: ["折腾"]
 # 标签 ["总结","免费","IDE"]
-tags: ["博客"]
+tags: ["备忘"]
 # 最后更新时间
-lastmod: 2022-09-25 15:37:21
+lastmod: 2022-09-25 16:50:21
 ---
 
 ## 选择和安装主题以及自定义
@@ -61,11 +61,16 @@ Hugo会优先读取站点根目录下的，这意味着可以不修改主题的�
 
 #### 其一
 
-Stack主题的i18n\zh-cn.yaml里有一句是英文。
+Stack主题底部的 Built with Hugo 和点进分类后看见的 PAGE 。
 
 在站点根目录新建i18n\zh-cn.yaml。里面写入下面这段就可以汉化了。
 
 ```yaml
+list:
+    page:
+        one: "{{ .Count }} 页"
+        other: "{{ .Count }} 页"
+
 footer:
     builtWith:
         other: 使用 {{ .Generator }} 搭建
@@ -80,6 +85,16 @@ Stack主题的exampleSite（示例站点）中左侧菜单中归档顶部显示c
 ```
 ---
 title: 分类
+---
+```
+
+同理，点击标签进去看见的 tags 也可以这么做。
+
+在站点根目录新建content\tags\\_index.md。里面写入下面这段就可以汉化了。
+
+```
+---
+title: 标签
 ---
 ```
 
@@ -248,6 +263,27 @@ Stack主题在中文下的默认字体效果不太行，于是搜索一番后搜
     }
 }
 ```
+
+#### 让文章右边目录不显示莫名奇妙的序号
+
+在站点根目录config.yml中参考下面这段里的注释设置。
+
+```yml
+markup:
+    goldmark:
+        renderer:
+            ## Set to true if you have HTML content inside Markdown
+            unsafe: false
+    # 设置文章右边目录
+    tableOfContents:
+        # 目录标题结束级别
+        endLevel: 4
+        # 目录标题前是否使用序号
+        ordered: false
+        # 目录标题开始级别 2就已经和文章标题一样大了
+        startLevel: 2
+```
+
 ## 部署静态博客
 
 ### 把站点和构建的静态博客推送到同一个github储存库
@@ -269,7 +305,7 @@ publishDir: docs
 ```
 这个文件夹是Hugo本地查看静态网站效果生成的缓存文件夹，没必要推送到github储存库。
 
-## 关于Git和GitHub Desktop
+## 关于Git和GitHubDesktop
 
 我把这两个都装了。
 
@@ -277,5 +313,4 @@ publishDir: docs
 
 ## 一些有待解决的问题
 
-1. 点进分类后看见的 PAGE 在哪可以汉化？
-2. 怎么把文章标题改的更大？目前和##的标题一样大，有点不协调。
+怎么把文章标题改的更大？目前和##的标题一样大，有点不协调。

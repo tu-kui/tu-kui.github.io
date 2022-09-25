@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>Tags on 菟葵</title>
+        <title>标签 on 菟葵</title>
         <link>https://tu-kui.github.io/tags/</link>
-        <description>Recent content in Tags on 菟葵</description>
+        <description>Recent content in 标签 on 菟葵</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <lastBuildDate>Sun, 25 Sep 2022 12:00:11 +0800</lastBuildDate><atom:link href="https://tu-kui.github.io/tags/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>博客</title>
-        <link>https://tu-kui.github.io/tags/%E5%8D%9A%E5%AE%A2/</link>
+        <title>备忘</title>
+        <link>https://tu-kui.github.io/tags/%E5%A4%87%E5%BF%98/</link>
         <pubDate>Sun, 25 Sep 2022 12:00:11 +0800</pubDate>
         
-        <guid>https://tu-kui.github.io/tags/%E5%8D%9A%E5%AE%A2/</guid>
+        <guid>https://tu-kui.github.io/tags/%E5%A4%87%E5%BF%98/</guid>
         <description></description>
         </item>
         
