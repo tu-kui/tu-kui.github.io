@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>菟葵</title>
+        <link>https://tu-kui.github.io/</link>
+        <description>Recent content on 菟葵</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <lastBuildDate>Sat, 24 Sep 2022 14:41:11 +0800</lastBuildDate><atom:link href="https://tu-kui.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>搭建静态博客对于非程序员来说有些困难</title>
+        <link>https://tu-kui.github.io/p/%E6%90%AD%E5%BB%BA%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E5%AF%B9%E4%BA%8E%E9%9D%9E%E7%A8%8B%E5%BA%8F%E5%91%98%E6%9D%A5%E8%AF%B4%E6%9C%89%E4%BA%9B%E5%9B%B0%E9%9A%BE/</link>
+        <pubDate>Sat, 24 Sep 2022 14:41:11 +0800</pubDate>
+        
+        <guid>https://tu-kui.github.io/p/%E6%90%AD%E5%BB%BA%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E5%AF%B9%E4%BA%8E%E9%9D%9E%E7%A8%8B%E5%BA%8F%E5%91%98%E6%9D%A5%E8%AF%B4%E6%9C%89%E4%BA%9B%E5%9B%B0%E9%9A%BE/</guid>
+        <description>&lt;p&gt;搭建这个博客除了折腾本身的乐趣外，是我的确需要一个地方写一些有的没的。&lt;/p&gt;
+&lt;p&gt;对于我来说，那些现成的博客平台没一个顺眼的。&lt;/p&gt;
+&lt;p&gt;即使这样搭建出来的静态博客写文和发布之类折腾一些，但是我不在乎。&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>关于</title>
+        <link>https://tu-kui.github.io/%E5%85%B3%E4%BA%8E/</link>
+        <pubDate>Fri, 23 Sep 2022 00:00:00 +0800</pubDate>
+        
+        <guid>https://tu-kui.github.io/%E5%85%B3%E4%BA%8E/</guid>
+        <description>&lt;p&gt;懒得写，页面先挂着&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>归档</title>
+        <link>https://tu-kui.github.io/archives/</link>
+        <pubDate>Thu, 22 Sep 2022 00:00:00 +0800</pubDate>
+        
+        <guid>https://tu-kui.github.io/archives/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>搜索</title>
+        <link>https://tu-kui.github.io/search/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://tu-kui.github.io/search/</guid>
+        <description></description>
+        </item>
+        
+    </channel>
+</rss>

@@ -1,0 +1,229 @@
+# 绑定的域名？ 部署前更改baseurl
+baseURL: "https://tu-kui.github.io/"
+languageCode: zh-cn
+# 主题名字 和themes文件夹下的一致
+theme: hugo-theme-stack
+paginate: 5
+# 网站标题
+title: 菟葵
+# 构建静态的目录改为docs
+# 这样可以把hogo生成的站点一起推送到github
+# 设置GitHub Pages使用docs即可
+publishDir: docs
+
+# 使用前将其更改为您的 Disqus 短名称 disqus评论
+# disqusShortname: hugo-theme-stack
+
+# 主题 i18n 支持
+# 可用值：en, fr, id, yes, that, pt-br, zh-cn, zh-tw, is, of, nl, it, th, el, uk, ar
+DefaultContentLanguage: zh-cn
+
+# 如果 DefaultContentLanguage 在 [zh-cn ja ko] 中，则将 hasCJKLanguage 设置为 true
+# 这将使 .Summary 和 .WordCount 对于 CJK 语言的行为正确。
+hasCJKLanguage: true
+
+# 设置时区 避免文章时间消失
+timeZone: "Asia/Shanghai"
+
+permalinks:
+    # 每个内容部分的固定链接格式
+    post: /p/:slug/
+    page: /:slug/
+
+params:
+    # 放置在这些部分下的页面将显示在主页和存档页面上。
+    mainSections:
+        # 设置主页要展示的部分
+        - post
+    featuredImageField: image
+    # 以 RSS 输出页面的完整内容。
+    rssFullContent: true
+    favicon:
+
+    # 页角 在底部
+    footer:
+        # ©版权符号后开头的 
+        # 如果是同年则就会显示当年，否则会2021 - 2022格式
+        since: 2022
+        # 版权符号下面那行，没字也行
+        customText:
+
+    # 日期格式 
+    # 输入中文就可用中文，比如2006年01月02日 15时04分
+    dateFormat:
+        # 发表时间
+        published: 2006-01-02 15:04
+        # 最后更新时间
+        lastUpdated: 2006-01-02 15:04
+
+    sidebar:
+        # 在左边头像上的emoji
+        # emoji: 🍥
+        # 副标题，在左上头像下方
+        subtitle: 时限式
+        # 头像，在左上角
+        avatar:
+            enabled: true
+            local: true
+            src: img/avatar.jpg
+    # 文章
+    article:
+        math: false
+        toc: true
+        readingTime: true
+        license:
+            enabled: true
+            default: CC BY-NC-SA 4.0
+    # 评论 
+    comments:
+        enabled: false #true
+        provider: disqus
+
+        disqusjs:
+            shortname:
+            apiUrl:
+            apiKey:
+            admin:
+            adminLabel:
+
+        utterances:
+            repo:
+            issueTerm: pathname
+            label:
+
+        remark42:
+            host:
+            site:
+            locale:
+
+        vssue:
+            platform:
+            owner:
+            repo:
+            clientId:
+            clientSecret:
+            autoCreateIssue: false
+
+        # Waline client configuration see: https://waline.js.org/en/reference/component.html
+        waline:
+            serverURL:
+            lang:
+            pageview:
+            emoji:
+                - https://unpkg.com/@waline/emojis@1.0.1/weibo
+            requiredMeta:
+                - name
+                - email
+                - url
+            locale:
+                admin: Admin
+                placeholder:
+
+        twikoo:
+            envId:
+            region:
+            path:
+            lang:
+
+        # See https://cactus.chat/docs/reference/web-client/#configuration for description of the various options
+        cactus:
+            defaultHomeserverUrl: "https://matrix.cactus.chat:8448"
+            serverName: "cactus.chat"
+            siteName: "" # You must insert a unique identifier here matching the one you registered (See https://cactus.chat/docs/getting-started/quick-start/#register-your-site)
+
+        giscus:
+            repo:
+            repoID:
+            category:
+            categoryID:
+            mapping:
+            lightTheme:
+            darkTheme:
+            reactionsEnabled: 1
+            emitMetadata: 0
+
+        gitalk:
+            owner:
+            admin:
+            repo:
+            clientID:
+            clientSecret:
+
+        cusdis:
+            host:
+            id:
+    # 小部件 右侧边栏
+    widgets:
+        homepage:
+            - type: search
+            - type: archives
+              params:
+                  limit: 5
+            - type: categories
+              params:
+                  limit: 10
+            - type: tag-cloud
+              params:
+                  limit: 10
+        page:
+            - type: toc
+
+    # 配色方案
+    colorScheme:
+        # 显示切换选项
+        toggle: true
+
+        # 可用值: auto, light, dark
+        default: auto
+    # 图像处理
+    imageProcessing:
+        cover:
+            enabled: true
+        content:
+            enabled: true
+
+# 自定义菜单 头像下左侧边
+# See https://docs.stack.jimmycai.com/configuration/custom-menu.html
+menu:
+    # 从hugo-theme-stack\exampleSite\content拷贝相应文件
+    # 设置左侧边栏菜单
+    main: []
+
+    # 社交
+    social:
+        - identifier: github
+          name: GitHub
+          url: https://github.com/tu-kui
+          params:
+          # 图标可从https://tablericons.com/获取
+          # 图标位置hugo-theme-stack\assets\icons
+              icon: brand-github
+
+related:
+    includeNewer: true
+    threshold: 60
+    toLower: false
+    indices:
+        - name: tags
+          weight: 100
+
+        - name: categories
+          weight: 200
+
+markup:
+    goldmark:
+        renderer:
+            ## Set to true if you have HTML content inside Markdown
+            unsafe: false
+    tableOfContents:
+        endLevel: 4
+        ordered: true
+        startLevel: 2
+    highlight:
+        noClasses: false
+        codeFences: true
+        guessSyntax: true
+        lineNoStart: 1
+        lineNos: true
+        lineNumbersInTable: true
+        tabWidth: 4
