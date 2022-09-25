@@ -12,9 +12,10 @@
         <pubDate>Sun, 25 Sep 2022 12:00:11 +0800</pubDate>
         
         <guid>https://tu-kui.github.io/p/%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%A4%87%E5%BF%98/</guid>
-        <description>&lt;h2 id=&#34;为什么选择hugo&#34;&gt;为什么选择Hugo&lt;/h2&gt;
-&lt;p&gt;选择Hugo主要是听说生成速度非常快。&lt;/p&gt;
+        <description>&lt;h2 id=&#34;选择hugo的原因&#34;&gt;选择Hugo的原因&lt;/h2&gt;
+&lt;p&gt;选择Hugo主要是听说生成速度非常快（目前写的太少没啥特别感觉）。&lt;/p&gt;
 &lt;p&gt;也有一部分是因为它只需要二进制文件就可以生成，不需要安装额外的东西。&lt;/p&gt;
+&lt;p&gt;另外，构建的需要删除后再次构建，以免出问题（这是官网文档写着的）。&lt;/p&gt;
 &lt;h2 id=&#34;选择和安装主题以及自定义&#34;&gt;选择和安装主题以及自定义&lt;/h2&gt;
 &lt;h3 id=&#34;选择主题选择的不仅仅是外观&#34;&gt;选择主题选择的不仅仅是外观&lt;/h3&gt;
 &lt;p&gt;在开始使用主题之前，我还没意识到选择主题不仅仅是选择喜欢的外观。&lt;/p&gt;
