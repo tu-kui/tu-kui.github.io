@@ -1,1 +1,4 @@
 /resources/
+/.hugo_build.lock
+/.gitmodules
+/.gitignore
