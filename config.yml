@@ -233,11 +233,11 @@ markup:
     # 设置文章右边目录
     tableOfContents:
         # 目录标题结束级别
-        endLevel: 4
+        endLevel: 4 # 4
         # 目录标题前是否使用序号
         ordered: false
         # 目录标题开始级别 2就已经和文章标题一样大了
-        startLevel: 2
+        startLevel: 2 # 2
     # 代码高亮 可能需要手动指定语言
     highlight:
         noClasses: false

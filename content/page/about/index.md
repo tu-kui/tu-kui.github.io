@@ -1,5 +1,7 @@
 ---
 title: 关于
+#链接 留空使用标题
+slug: About
 # 副标题
 description: 
 date: '2022-09-23'
